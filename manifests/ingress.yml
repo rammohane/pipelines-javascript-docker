@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "ramazurekube-ca7e"
+    labels:
+        app: "ramazurekube-ca7e"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: ramazurekubea804-ramazurekube-ca7e.423687d7af774be8a70f.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "ramazurekube-ca7e"
+                servicePort: 8080
