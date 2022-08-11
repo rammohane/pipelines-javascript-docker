@@ -13,5 +13,7 @@ spec:
             paths:
             - path: /
               backend:
-                serviceName: "ramazurekube-ca7e"
-                servicePort: 8080
+                service:
+                    name: "ramazurekube-ca7e"
+                    port:
+                        number: 8080
