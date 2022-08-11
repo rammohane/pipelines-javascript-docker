@@ -1,7 +1,7 @@
 {
   "name": "my_app",
   "version": "1.0.0",
-  "description": "Sample used for container templates",
+  "description": "Sample used for container templates-with some-change ",
   "author": "Shashank Barsin",
   "main": "server.js",
   "scripts": {
