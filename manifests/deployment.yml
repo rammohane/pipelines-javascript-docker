@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "ramazurekube-ca7e"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "ramazurekube-ca7e"
+  template:
+    metadata:
+      labels:
+        app: "ramazurekube-ca7e"
+    spec:
+      containers:
+        - name: "ramazurekube-ca7e"
+          image: "ramreg1.azurecr.io/ramazurekube"
+          ports:
+          - containerPort: 8080
